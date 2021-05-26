@@ -10,7 +10,7 @@ The TaskManager was built using these Microsoft technologies:
 
 # Starting the TaskManager
 These are the steps to start the TaskManager API:
-1. Restore the SQL server database in a SQL Server instance. The backup can be found in /SQL Server/Database Files/TaskManagerOLTP.bak. The scripts to create the users, table, and stored procedures can be found in /SQL Server/Scripts.
+1. Restore the SQL server database in a SQL Server instance. The database was built to be comptabile with SQL Server 2012 and up. The backup can be found in /SQL Server/Database Files/TaskManagerOLTP.bak. The scripts to create the users, table, and stored procedures can be found in /SQL Server/Scripts.
 2. Open appsettings.json and update the connection string. The format must be "data Source={Your SQL Server Instance};User Id=Development;Password=Devel0pment123!;Connect Timeout=60;Initial Catalog={The name of the restored OLTP database};TrustServerCertificate=True;";
 3. Run the windows batch file StartTaskManager.cmd. It will start hosting the service. The address by default is http://localhost/5000.
 
